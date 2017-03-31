@@ -2,11 +2,11 @@
 
 # a million commits
 
-for Y in {2019..2019}
+for Y in {2017..2017}
 do
   mkdir $Y
   cd $Y
-  for M in {11..12}
+  for M in {02..03}
   do
     mkdir $M
     cd $M
@@ -14,7 +14,7 @@ do
     do
       mkdir $D
       cd $D
-      range=$((RANDOM % 3))
+      range=$((RANDOM % 2))
       for i in `eval echo {1..$range}`
       do
         echo "$i on $M/$D/$Y" > commit.md
